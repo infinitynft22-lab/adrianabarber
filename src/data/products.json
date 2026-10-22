@@ -1,0 +1,164 @@
+[
+  {
+    "id": "prod_f064bc6b-c91d-4d84-8159-3e68a12558bd",
+    "name": "Plumero de aire inalámbrico, 180,000 RPM",
+    "brand": "VIITOVA",
+    "description": "Limpieza de herramientas y del área de trabajo.",
+    "category": "tools",
+    "image": "/assets/catalog-1.jpg",
+    "url": "https://www.amazon.com/dp/B0HBX2CRXW"
+  },
+  {
+    "id": "prod_528fb235-984f-48e0-b3f2-6d1daf10b955",
+    "name": "EyeVac Pro · Aspiradora sin contacto",
+    "brand": "EYE-VAC",
+    "description": "Limpieza del suelo sin contacto.",
+    "category": "tools",
+    "image": "/assets/catalog-6.jpg",
+    "url": "https://www.amazon.com/dp/B00K0F64E6"
+  },
+  {
+    "id": "prod_6fecf21e-9fe6-4004-8408-0b7f5187aa8b",
+    "name": "Loción aftershave clásica Clubman",
+    "brand": "CLUBMAN",
+    "description": "El acabado clásico después del afeitado.",
+    "category": "skin",
+    "image": "/assets/catalog-7.jpg",
+    "url": "https://www.amazon.com/dp/B01BYGIBZY"
+  },
+  {
+    "id": "prod_6a847d21-26b8-4ee1-8b90-29741617b868",
+    "name": "Aceite para máquinas, 4 oz · Paquete de 2",
+    "brand": "ANDIS",
+    "description": "Mantenimiento de cuchillas y herramientas de corte.",
+    "category": "tools",
+    "image": "/assets/catalog-10.jpg",
+    "url": "https://www.amazon.com/dp/B0CRJY2CKH"
+  },
+  {
+    "id": "prod_26188454-7ee8-4c19-8c24-23d6efc8ce3f",
+    "name": "Sillón hidráulico de barbería Artu",
+    "brand": "DIR",
+    "description": "Sillón y equipamiento para el espacio de trabajo.",
+    "category": "tools",
+    "image": "/assets/catalog-0.jpg",
+    "url": "https://www.amazon.com/dp/B0DW1WRDZN"
+  },
+  {
+    "id": "prod_72be4eab-38d7-43c9-bc74-4bb10efb287a",
+    "name": "Navaja profesional con 100 cuchillas",
+    "brand": "FACON",
+    "description": "Navaja de hoja intercambiable para un perfilado preciso.",
+    "category": "tools",
+    "image": "/assets/catalog-2.jpg",
+    "url": "https://www.amazon.com/dp/B07RK5MM3Z"
+  },
+  {
+    "id": "prod_7742d83f-a9a2-4572-af8b-058159f1ad5d",
+    "name": "Soplador de aire para barbería",
+    "brand": "MEN'S GROOMING BARBER PRO",
+    "description": "Una herramienta para la limpieza del puesto de barbería.",
+    "category": "tools",
+    "image": "/assets/catalog-3.jpg",
+    "url": "https://www.amazon.com/dp/B0D2R9LF5Z"
+  },
+  {
+    "id": "prod_e87aea90-17c4-4742-989a-297fe1858d3b",
+    "name": "Loción aftershave en spray Level 3",
+    "brand": "L3",
+    "description": "Cuidado de la piel después del afeitado.",
+    "category": "skin",
+    "image": "/assets/catalog-4.jpg",
+    "url": "https://www.amazon.com/dp/B0H738CX8M"
+  },
+  {
+    "id": "prod_3d36aeda-d0cf-417a-90bc-33dc2e968af2",
+    "name": "Kit de color para cobertura de canas",
+    "brand": "SIMPLER HAIR COLOR",
+    "description": "Coloración para cabello y cobertura de canas.",
+    "category": "styling",
+    "image": "/assets/catalog-5.jpg",
+    "url": "https://www.amazon.com/dp/B01MCTFXTK"
+  },
+  {
+    "id": "prod_c5fdc46a-5a7d-4a7c-857d-fbb11463bd20",
+    "name": "FXONE Double Foil · Afeitadora de doble lámina",
+    "brand": "BABYLISSPRO",
+    "description": "Afeitadora de doble lámina con batería intercambiable.",
+    "category": "tools",
+    "image": "/assets/catalog-8.jpg",
+    "url": "https://www.amazon.com/dp/B0CFSVHT43"
+  },
+  {
+    "id": "prod_4a7b69ad-418b-46d2-b2ad-ba0c163c9572",
+    "name": "Contenedor para desechar cuchillas",
+    "brand": "MINKISSY",
+    "description": "Eliminación de cuchillas usadas en el puesto de trabajo.",
+    "category": "skin",
+    "image": "/assets/catalog-9.jpg",
+    "url": "https://www.amazon.com/dp/B08B1CDVGK"
+  },
+  {
+    "id": "prod_acab6ad4-ab48-41b6-9bc7-7d328b5e41f5",
+    "name": "Cool Care Plus · Cuidado para máquinas",
+    "brand": "ANDIS",
+    "description": "Aerosol para el mantenimiento de máquinas.",
+    "category": "tools",
+    "image": "/assets/catalog-11.jpg",
+    "url": "https://www.amazon.com/dp/B07BQFXQX4"
+  },
+  {
+    "id": "prod_91a87de3-63cd-420e-8aad-b22471601352",
+    "name": "Ergo · Cortadora profesional",
+    "brand": "STYLECRAFT",
+    "description": "Herramienta de corte con base de carga y accesorios.",
+    "category": "tools",
+    "image": "/assets/catalog-12.jpg",
+    "url": "https://www.amazon.com/dp/B08CRY114Y"
+  },
+  {
+    "id": "prod_518b4cc3-e344-4f03-9907-88f5946141f2",
+    "name": "Cortadora profesional sin escobillas",
+    "brand": "STYLECRAFT",
+    "description": "Cuerpo metálico y motor sin escobillas.",
+    "category": "tools",
+    "image": "/assets/catalog-13.jpg",
+    "url": "https://www.amazon.com/dp/B0DFDSXTQF"
+  },
+  {
+    "id": "prod_533a2e1e-4690-4eaa-8513-03ea2a1a483c",
+    "name": "Saber · Cortadora inalámbrica",
+    "brand": "STYLECRAFT",
+    "description": "Cortadora inalámbrica profesional para acabados.",
+    "category": "tools",
+    "image": "/assets/catalog-14.jpg",
+    "url": "https://www.amazon.com/dp/B0BRJQD2XT"
+  },
+  {
+    "id": "prod_1d57e3dd-f5a9-4002-8331-7bec782711dd",
+    "name": "FXONE · Perfiladora inalámbrica",
+    "brand": "BABYLISSPRO",
+    "description": "Perfiladora con batería intercambiable.",
+    "category": "tools",
+    "image": "/assets/catalog-15.jpg",
+    "url": "https://www.amazon.com/dp/B0CFSQJZ3Z"
+  },
+  {
+    "id": "prod_30186ec3-8d93-4732-b33a-0c34389309da",
+    "name": "Limpiador de vapor portátil",
+    "brand": "PRIMIORIX",
+    "description": "Limpieza con vapor para superficies compatibles.",
+    "category": "tools",
+    "image": "/assets/catalog-16.jpg",
+    "url": "https://www.amazon.com/dp/B0GKFJR2MF"
+  },
+  {
+    "id": "prod_098077a9-3116-48f9-98e0-eeccb727fecd",
+    "name": "Kit de dos paneles LED bicolor",
+    "brand": "NEEWER",
+    "description": "Iluminación para fotografías y videos de tus trabajos.",
+    "category": "tools",
+    "image": "/assets/catalog-17.jpg",
+    "url": "https://www.amazon.com/dp/B072Q42GXQ"
+  }
+]
