@@ -37,4 +37,4 @@ El paquete está preparado para hosting estático y para Sites. `dist/client` co
 
 La revisión visual y los recorridos probados se documentan en `design-qa.md`. Las capturas de evidencia permanecen localmente en `.qa/`, excluidas de Git.
 
-Estado de entrega: vista previa local. No hay repositorio remoto ni destino de publicación configurados en esta carpeta.
+Sitio público: https://adrianabarber.vercel.app/. Código: https://github.com/infinitynft22-lab/adrianabarber. El proyecto de Vercel pertenece al equipo `adrianabarber`; la conexión automática con GitHub está pendiente de configuración.
