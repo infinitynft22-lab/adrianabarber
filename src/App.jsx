@@ -16,6 +16,8 @@ import {
   Copy,
   CalendarBlank,
   Crown,
+  House,
+  Images,
 } from "@phosphor-icons/react";
 import products from "./data/products.json";
 import { services, gallery, business, extras } from "./data/business";
@@ -44,12 +46,6 @@ function Logo({ large = false }) {
       aria-label="ADRIANA BARBER · Inicio"
     >
       <img src="/assets/adriana-barber-logo.png" alt="ADRIANA BARBER" />
-      {!large && (
-        <span>
-          ADRIANA <b>BARBER</b>
-          <small>BARBER STUDIO</small>
-        </span>
-      )}
     </a>
   );
 }
@@ -826,12 +822,24 @@ export function App() {
           </a>
         </div>
       </footer>
-      <div className="mobile-cta">
-        <span>Tu estilo empieza aquí.</span>
-        <Button onClick={() => setBooking("")}>
-          Reservar <ArrowUpRight />
-        </Button>
-      </div>
+      <nav className="mobile-dock" aria-label="Navegación móvil">
+        <a href="#home" aria-current={active === "home" ? "page" : undefined}>
+          <House size={21} weight={active === "home" ? "fill" : "regular"} />
+          <span>Inicio</span>
+        </a>
+        <a href="#services" aria-current={active === "services" ? "page" : undefined}>
+          <Scissors size={21} weight={active === "services" ? "fill" : "regular"} />
+          <span>Servicios</span>
+        </a>
+        <a href="#gallery" aria-current={active === "gallery" ? "page" : undefined}>
+          <Images size={21} weight={active === "gallery" ? "fill" : "regular"} />
+          <span>Galería</span>
+        </a>
+        <button type="button" onClick={() => setBooking("")}>
+          <CalendarBlank size={21} weight="fill" />
+          <span>Reservar</span>
+        </button>
+      </nav>
       {booking !== null && (
         <Booking service={booking} onClose={() => setBooking(null)} />
       )}
