@@ -1,7 +1,7 @@
 // Only publish approved studio information. Empty contacts never point to another business.
 export const business = {
   name: "ADRIANA BARBER",
-  whatsapp: "",
+  whatsapp: "18292916897",
   address: "",
   hours: "",
   socials: { instagram: "", tiktok: "", youtube: "" },
