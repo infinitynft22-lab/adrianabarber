@@ -111,13 +111,12 @@ function Booking({ service, onClose }) {
   const today = new Date().toLocaleDateString("en-CA", {
     timeZone: "America/Santo_Domingo",
   });
-  const message = request
-    ? `Hola Adriana, soy ${request.name}. Quisiera consultar disponibilidad para ${request.service} el ${request.date}, ${request.period.toLowerCase()}.${request.notes ? " " + request.notes : ""}`
-    : "";
+  const getBookingMessage = (booking) =>
+    `Hola Adriana, soy ${booking.name}. Quisiera consultar disponibilidad para ${booking.service} el ${booking.date}, ${booking.period.toLowerCase()}. El servicio sería en ${booking.address}, ${booking.city}.${booking.notes ? " " + booking.notes : ""}`;
+  const message = request ? getBookingMessage(request) : "";
   const openWhatsApp = (booking) => {
-    const bookingMessage = `Hola Adriana, soy ${booking.name}. Quisiera consultar disponibilidad para ${booking.service} el ${booking.date}, ${booking.period.toLowerCase()}.${booking.notes ? " " + booking.notes : ""}`;
     window.open(
-      `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(bookingMessage)}`,
+      `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(getBookingMessage(booking))}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -151,6 +150,10 @@ function Booking({ service, onClose }) {
             <p>
               <CalendarBlank />
               {request.date} · {request.period}
+            </p>
+            <p>
+              <MapPin />
+              {request.address}, {request.city}
             </p>
             <p>{request.name}</p>
           </div>
@@ -250,6 +253,30 @@ function Booking({ service, onClose }) {
                 required
               />
             </label>
+            <div className="form-row location-row">
+              <label>
+                Ciudad
+                <input
+                  name="city"
+                  defaultValue={draft?.city}
+                  autoComplete="address-level2"
+                  placeholder="Ej. Santo Domingo"
+                  maxLength={100}
+                  required
+                />
+              </label>
+              <label>
+                Dirección del servicio
+                <input
+                  name="address"
+                  defaultValue={draft?.address}
+                  autoComplete="street-address"
+                  placeholder="Ej. Calle Principal #123"
+                  maxLength={180}
+                  required
+                />
+              </label>
+            </div>
             <label>
               Notas (opcional)
               <textarea

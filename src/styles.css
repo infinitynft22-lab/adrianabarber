@@ -1017,6 +1017,9 @@ textarea {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
+.location-row {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+}
 .note {
   font-size: 11px;
   color: #94aa98;
@@ -1672,6 +1675,9 @@ textarea {
   }
   .form-row {
     gap: 10px;
+  }
+  .location-row {
+    grid-template-columns: 1fr;
   }
   label {
     font-size: 12px;
