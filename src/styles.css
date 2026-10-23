@@ -5,10 +5,10 @@
   background: #05070e;
   font-synthesis: none;
   --bg: #05070e;
-  --panel: #0a0f1d;
-  --blue: #58b8ff;
-  --action: #155eef;
-  --muted: #a3adbd;
+  --panel: #08140d;
+  --blue: #57d477;
+  --action: #178a4c;
+  --muted: #a9bcae;
   --line: #ffffff17;
   --shell: min(1180px, calc(100% - 80px));
 }
@@ -100,7 +100,7 @@ textarea:focus {
     monospace;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #9bb2ce;
+  color: #a7c6af;
 }
 .section-heading {
   text-align: center;
@@ -149,14 +149,14 @@ textarea:focus {
 }
 .button:hover {
   transform: translateY(-2px);
-  background: #2873ff;
+  background: #20aa60;
 }
 .button.outline {
-  border-color: #7691b35e;
-  background: #08101c80;
+  border-color: #79b68a5e;
+  background: #07140d80;
 }
 .button.outline:hover {
-  background: #152942;
+  background: #12311f;
   border-color: var(--blue);
 }
 .icon-button {
@@ -207,14 +207,14 @@ textarea:focus {
     8px "DM Mono",
     monospace;
   letter-spacing: 0.22em;
-  color: #9ca9b8;
+  color: #a7baa9;
   margin-top: 6px;
 }
 header {
   position: fixed;
   inset: 0 0 auto;
   z-index: 50;
-  background: #040911df;
+  background: #030a06df;
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--line);
 }
@@ -290,6 +290,7 @@ nav a:hover::after {
   object-fit: cover;
   object-position: center;
   z-index: -3;
+  filter: hue-rotate(-66deg) saturate(0.9);
 }
 .hero-overlay {
   position: absolute;
@@ -304,7 +305,7 @@ nav a:hover::after {
     11px "DM Mono",
     monospace;
   letter-spacing: 0.27em;
-  color: #c7d2df;
+  color: #c8dacb;
   margin-bottom: 34px;
 }
 .hero h1 {
@@ -317,7 +318,7 @@ nav a:hover::after {
 .hero-lede {
   font-size: 19px;
   line-height: 1.6;
-  color: #d3d9e2;
+  color: #d5e1d6;
   max-width: 450px;
 }
 .hero h1 .hero-brand {
@@ -330,6 +331,32 @@ nav a:hover::after {
   display: flex;
   gap: 14px;
   margin-top: 26px;
+}
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 48;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 54px;
+  padding: 0 18px;
+  border: 1px solid #7dffba66;
+  border-radius: 999px;
+  background: #19a765;
+  box-shadow: 0 14px 30px #0008;
+  color: #fff;
+  font: 700 13px Barlow, Arial, sans-serif;
+  transition: transform 0.2s, background 0.2s;
+}
+.whatsapp-float:hover {
+  background: #128c55;
+  transform: translateY(-3px);
+}
+.whatsapp-float:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
 }
 .hero-proof {
   display: flex;
@@ -345,7 +372,7 @@ nav a:hover::after {
     9px/1.9 "DM Mono",
     monospace;
   letter-spacing: 0.08em;
-  color: #8797aa;
+  color: #8fa991;
 }
 .hero-proof p + p {
   border-left: 1px solid #ffffff33;
@@ -354,7 +381,7 @@ nav a:hover::after {
 }
 .hero-proof strong {
   font-weight: 400;
-  color: #ced7e3;
+  color: #cfdfd1;
 }
 .hero-proof svg {
   color: var(--blue);
@@ -371,7 +398,7 @@ nav a:hover::after {
     9px "DM Mono",
     monospace;
   letter-spacing: 0.14em;
-  color: #9ca9bb;
+  color: #a9bcae;
 }
 .hero-footnote a {
   margin-left: auto;
@@ -384,7 +411,7 @@ nav a:hover::after {
 }
 .services-section {
   background:
-    linear-gradient(#050910e8, #050710fa),
+    linear-gradient(#041008e8, #030a05fa),
     url("/assets/studio-hero.png") center / cover;
   border-top: 1px solid var(--line);
   padding-block: 80px;
@@ -413,14 +440,14 @@ nav a:hover::after {
   border: 1px solid #ffffff12;
   border-radius: 8px;
   overflow: hidden;
-  background: #080b15;
+  background: #07120b;
   transition:
     transform 0.25s,
     border-color 0.25s;
 }
 .service-card:hover {
   transform: translateY(-5px);
-  border-color: #58b8ff66;
+  border-color: #57d47766;
 }
 .service-image {
   aspect-ratio: 1.3;
@@ -486,7 +513,7 @@ nav a:hover::after {
   border-color: var(--action);
 }
 .vip {
-  border-color: #58b8ff5a;
+  border-color: #57d4775a;
 }
 .vip-badge {
   position: absolute;
@@ -496,8 +523,8 @@ nav a:hover::after {
   gap: 6px;
   align-items: center;
   padding: 7px 9px;
-  background: #08182ce8;
-  border: 1px solid #58b8ff60;
+  background: #071b0ee8;
+  border: 1px solid #57d47760;
   border-radius: 4px;
   font:
     9px "DM Mono",
@@ -513,18 +540,18 @@ nav a:hover::after {
     monospace;
   letter-spacing: 0.25em;
   margin-top: 40px;
-  color: #9ca7bc;
+  color: #a2b8a6;
 }
 .reference-note {
   font-size: 11px;
-  color: #758198;
+  color: #7e9683;
   line-height: 1.6;
   text-align: center;
   margin-top: 24px;
 }
 .products-section {
-  background: #060c18;
-  border-block: 1px solid #58b8ff1c;
+  background: #061009;
+  border-block: 1px solid #57d4771c;
 }
 .products-section h2 {
   font-size: clamp(36px, 4vw, 54px);
@@ -553,7 +580,7 @@ nav a:hover::after {
   border: 1px solid #4f8dc337;
   border-radius: 10px;
   overflow: hidden;
-  background: #0a1322;
+  background: #0a1b10;
   min-width: 0;
   transition:
     transform 0.2s,
@@ -598,7 +625,7 @@ nav a:hover::after {
 .product-copy > p:last-child {
   font-size: 13px;
   line-height: 1.5;
-  color: #a5b3c7;
+  color: #abc4b0;
   margin-top: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -625,9 +652,9 @@ nav a:hover::after {
   gap: 7px;
   align-items: center;
   padding: 9px 10px;
-  border: 1px solid #40608b5e;
+  border: 1px solid #3d76505e;
   border-radius: 5px;
-  background: #12223a;
+  background: #122b19;
 }
 .product-footer a:hover {
   background: var(--action);
@@ -663,13 +690,13 @@ nav a:hover::after {
   font:
     11px "DM Mono",
     monospace;
-  color: #6984a2;
+  color: #789b81;
 }
 .extra-list small {
   display: block;
   font-size: 13px;
   line-height: 1.5;
-  color: #8997ab;
+  color: #90a993;
   margin-top: 8px;
 }
 .extra-list svg {
@@ -677,7 +704,7 @@ nav a:hover::after {
   flex-shrink: 0;
 }
 .gallery-section {
-  background: #080c16;
+  background: #071109;
   border-block: 1px solid var(--line);
 }
 .filters {
@@ -694,12 +721,12 @@ nav a:hover::after {
   padding: 11px 19px;
   font-size: 12px;
   line-height: 1.3;
-  color: #b5bed0;
+  color: #bfd0c1;
 }
 .filters button:hover,
 .filters button[aria-pressed="true"] {
-  background: #155eef22;
-  border-color: #58b8ff8a;
+  background: #178a4c22;
+  border-color: #57d4778a;
   color: white;
 }
 .gallery-grid {
@@ -712,7 +739,7 @@ nav a:hover::after {
   aspect-ratio: 1.05;
   border: 0;
   padding: 0;
-  background: #111827;
+  background: #112218;
   border-radius: 6px;
   overflow: hidden;
   text-align: left;
@@ -764,7 +791,7 @@ nav a:hover::after {
 }
 .about-copy {
   padding: 90px clamp(35px, 6vw, 100px);
-  background: #050910;
+  background: #040d07;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -779,7 +806,7 @@ nav a:hover::after {
 .about-copy > p:not(.eyebrow) {
   font-size: 17px;
   line-height: 1.7;
-  color: #a0adbf;
+  color: #aabfac;
   max-width: 42ch;
   margin-top: 22px;
 }
@@ -787,7 +814,7 @@ nav a:hover::after {
   margin-top: 30px;
 }
 .reviews-section {
-  background: #080b14;
+  background: #071109;
   border-top: 1px solid var(--line);
 }
 .review-grid {
@@ -799,7 +826,7 @@ nav a:hover::after {
   border: 1px solid var(--line);
   padding: 28px;
   border-radius: 7px;
-  background: #0a0e19;
+  background: #09130c;
 }
 .review-card > span {
   font:
@@ -814,12 +841,12 @@ nav a:hover::after {
 .review-card p {
   font-size: 16px;
   line-height: 1.6;
-  color: #a8b2c3;
+  color: #b0c5b3;
   margin-top: 15px;
 }
 .location-section {
-  background: #061326;
-  border-block: 1px solid #58b8ff25;
+  background: #071b0e;
+  border-block: 1px solid #57d47725;
 }
 .location-section .button {
   margin-top: 26px;
@@ -828,7 +855,7 @@ nav a:hover::after {
   border: 1px solid #ffffff20;
   padding: 14px 30px;
   border-radius: 8px;
-  background: #050c18;
+  background: #061209;
 }
 .location-details > div {
   display: flex;
@@ -849,7 +876,7 @@ nav a:hover::after {
 .location-details p {
   font-size: 14px;
   line-height: 1.6;
-  color: #a0aec1;
+  color: #aabfac;
 }
 .social-section {
   padding: 70px 0;
@@ -877,7 +904,7 @@ nav a:hover::after {
 }
 .social-links span {
   font-size: 12px;
-  color: #728196;
+  color: #78947e;
 }
 .footer-main {
   display: flex;
@@ -896,7 +923,7 @@ nav a:hover::after {
     10px "DM Mono",
     monospace;
   letter-spacing: 0.18em;
-  color: #a1adc0;
+  color: #aabfac;
 }
 .footer-bottom {
   padding-block: 23px;
@@ -905,7 +932,7 @@ nav a:hover::after {
   gap: 20px;
   border-top: 1px solid var(--line);
   font-size: 11px;
-  color: #728196;
+  color: #78947e;
 }
 .footer-bottom > a {
   font:
@@ -920,15 +947,15 @@ nav a:hover::after {
 }
 dialog {
   color: #f5f7fc;
-  background: #080f1d;
-  border: 1px solid #4276a35c;
+  background: #08140d;
+  border: 1px solid #43845a5c;
   border-radius: 12px;
   padding: 38px;
   max-height: calc(100svh - 40px);
   box-shadow: 0 20px 100px #0009;
 }
 dialog::backdrop {
-  background: #01040dd6;
+  background: #010804d6;
   backdrop-filter: blur(8px);
 }
 .close {
@@ -950,7 +977,7 @@ dialog::backdrop {
   max-width: 90%;
 }
 .dialog-description {
-  color: #9faec4;
+  color: #a7bfac;
   font-size: 15px;
   line-height: 1.6;
   margin: 20px 0 24px;
@@ -965,7 +992,7 @@ label {
   flex-direction: column;
   gap: 8px;
   font-size: 13px;
-  color: #c9d4e6;
+  color: #c8dec9;
 }
 input,
 select,
@@ -973,9 +1000,9 @@ textarea {
   min-width: 0;
   max-width: 100%;
   width: 100%;
-  color: #e5edfa;
-  background: #050a14;
-  border: 1px solid #55719655;
+  color: #e5f0e6;
+  background: #050d08;
+  border: 1px solid #557b5e55;
   border-radius: 5px;
   padding: 12px;
   font-size: 14px;
@@ -992,7 +1019,7 @@ textarea {
 }
 .note {
   font-size: 11px;
-  color: #8c9cb3;
+  color: #94aa98;
   line-height: 1.6;
   margin-top: 8px;
 }
@@ -1000,7 +1027,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #58b8ff20;
+  background: #57d47720;
   color: var(--blue);
   width: 54px;
   height: 54px;
@@ -1012,7 +1039,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: #c6d3e5;
+  color: #c8ddcb;
   font-size: 15px;
 }
 .request p {
@@ -1023,7 +1050,7 @@ textarea {
 .message {
   margin: 20px 0;
   font-size: 14px;
-  color: #8f9eb4;
+  color: #94aa98;
   line-height: 1.6;
 }
 .text-button {
@@ -1035,7 +1062,7 @@ textarea {
   font-size: 12px;
   margin-top: 20px;
   padding: 5px 0;
-  color: #b4c5dd;
+  color: #bdd1c0;
 }
 .catalog-dialog {
   width: min(1280px, calc(100% - 30px));
@@ -1054,7 +1081,7 @@ textarea {
 }
 .empty {
   text-align: center;
-  color: #a5b4c9;
+  color: #acc2b0;
   padding: 40px;
 }
 .lightbox {
@@ -1149,8 +1176,8 @@ textarea {
     flex-direction: column;
     align-items: stretch;
     padding: 22px 24px;
-    background: #070e1bf7;
-    border-bottom: 1px solid #58b8ff44;
+    background: #07130cf7;
+    border-bottom: 1px solid #57d47744;
     gap: 5px;
   }
   nav.open {
@@ -1268,9 +1295,9 @@ textarea {
   .menu-toggle {
     min-width: 44px;
     min-height: 44px;
-    border: 1px solid #74bbeb55;
+    border: 1px solid #76c98b55;
     border-radius: 14px;
-    background: #102136;
+    background: #0d2516;
   }
   .header-actions {
     gap: 5px;
@@ -1609,15 +1636,15 @@ textarea {
     z-index: 45;
     align-items: center;
     justify-content: space-between;
-    background: #050b16f2;
+    background: #06120af2;
     backdrop-filter: blur(18px);
-    border-top: 1px solid #58b8ff33;
+    border-top: 1px solid #57d47733;
     padding: 12px 18px calc(12px + env(safe-area-inset-bottom));
     gap: 15px;
   }
   .mobile-cta > span {
     font-size: 12px;
-    color: #a5b4c8;
+    color: #abc2af;
   }
   .mobile-cta .button {
     min-height: 40px;
@@ -1709,11 +1736,22 @@ textarea {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 4px;
     padding: 7px;
-    border: 1px solid #86caff55;
+    border: 1px solid #81d69655;
     border-radius: 22px;
-    background: #071322f5;
+    background: #07170df5;
     box-shadow: 0 12px 36px #0009;
     backdrop-filter: blur(22px);
+  }
+  .whatsapp-float {
+    right: 18px;
+    bottom: calc(88px + env(safe-area-inset-bottom));
+    min-width: 54px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .whatsapp-float span {
+    display: none;
   }
   .mobile-dock a,
   .mobile-dock button {
@@ -1726,7 +1764,7 @@ textarea {
     border: 0;
     border-radius: 16px;
     background: transparent;
-    color: #b7cce0;
+    color: #bed6c1;
     font: 600 10px Barlow, Arial, sans-serif;
     letter-spacing: 0;
     text-transform: none;
@@ -1738,10 +1776,10 @@ textarea {
   }
   .mobile-dock a[aria-current="page"] {
     color: #fff;
-    background: #173955;
+    background: #174a2a;
   }
   .mobile-dock button {
-    color: #03121f;
+    color: #03150a;
     background: var(--blue);
   }
   .mobile-dock a:focus-visible,

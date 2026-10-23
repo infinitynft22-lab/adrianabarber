@@ -18,6 +18,7 @@ import {
   Crown,
   House,
   Images,
+  WhatsappLogo,
 } from "@phosphor-icons/react";
 import products from "./data/products.json";
 import { services, gallery, business, extras } from "./data/business";
@@ -113,6 +114,14 @@ function Booking({ service, onClose }) {
   const message = request
     ? `Hola Adriana, soy ${request.name}. Quisiera consultar disponibilidad para ${request.service} el ${request.date}, ${request.period.toLowerCase()}.${request.notes ? " " + request.notes : ""}`
     : "";
+  const openWhatsApp = (booking) => {
+    const bookingMessage = `Hola Adriana, soy ${booking.name}. Quisiera consultar disponibilidad para ${booking.service} el ${booking.date}, ${booking.period.toLowerCase()}.${booking.notes ? " " + booking.notes : ""}`;
+    window.open(
+      `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(bookingMessage)}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
   return (
     <Modal
       label="Consulta tu cita"
@@ -196,6 +205,7 @@ function Booking({ service, onClose }) {
               setDraft(next);
               setCopied(false);
               setRequest(next);
+              openWhatsApp(next);
             }}
           >
             <label>
@@ -251,11 +261,10 @@ function Booking({ service, onClose }) {
               />
             </label>
             <Button>
-              Preparar solicitud <ArrowUpRight />
+              Guardar y enviar por WhatsApp <WhatsappLogo weight="fill" />
             </Button>
             <p className="note">
-              Consulta sin pago. Disponibilidad y precio por confirmar con el
-              estudio.
+              Se abrirá WhatsApp con tu solicitud lista para enviarla a Adriana.
             </p>
           </form>
         </>
@@ -464,9 +473,8 @@ export function App() {
               <em className="hero-brand">ADRIANA BARBER.</em>
             </h1>
             <p className="hero-lede">
-              Barbería con carácter. Un estilo que habla de ti.
-              <br />
-              Tu próximo look, en manos de ADRIANA BARBER.
+              Nos caracteriza esos pequeños detalle que nos llevan a la
+              perfección del corte y lucir una excelente imagen.!
             </p>
             <div className="hero-actions">
               <Button onClick={() => setBooking("")}>
@@ -822,6 +830,16 @@ export function App() {
           </a>
         </div>
       </footer>
+      <a
+        className="whatsapp-float"
+        href={`https://wa.me/${business.whatsapp}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escribir a Adriana por WhatsApp"
+      >
+        <WhatsappLogo size={29} weight="fill" />
+        <span>WhatsApp</span>
+      </a>
       <nav className="mobile-dock" aria-label="Navegación móvil">
         <a href="#home" aria-current={active === "home" ? "page" : undefined}>
           <House size={21} weight={active === "home" ? "fill" : "regular"} />
